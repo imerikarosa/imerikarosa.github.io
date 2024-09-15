@@ -256,8 +256,9 @@ button:hover, .back-button:hover {
   border-radius: 5px;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Align percentage to the right */
   align-items: center;
+  padding-right: 10px; /* Adds space between the number and the edge */
   color: white;
   font-weight: bold;
   transition: width 2s ease; /* Smooth */
@@ -265,6 +266,7 @@ button:hover, .back-button:hover {
 
 .percentage {
   position: absolute;
+  right: -40px; /* Moves percentage outside the bar to the right */
   font-size: 1rem;
   color: white;
 }
