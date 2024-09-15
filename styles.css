@@ -1,3 +1,4 @@
+/* General styles for the body */
 body {
   background-color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
@@ -6,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* Header styles */
 header {
   background-color: #6C63FF;
   color: white;
@@ -14,21 +16,25 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Header title */
 header h1 {
   font-size: 2.5rem;
   margin: 0;
 }
 
+/* Navigation menu (unstyled list) */
 header ul {
   list-style: none;
   padding: 0;
 }
 
+/* Navigation menu items */
 header ul li {
   display: inline-block;
   margin: 0 15px;
 }
 
+/* Navigation links */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -36,10 +42,12 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
+/* Navigation links hover effect */
 nav ul li a:hover {
   color: #FF6F61;
 }
 
+/* Section general styles (applies to all sections) */
 section {
   background-color: white;
   margin: 20px 0;
@@ -49,30 +57,36 @@ section {
   transition: transform 0.3s ease;
 }
 
+/* Hover effect on sections */
 section:hover {
   transform: translateY(-10px);
 }
 
+/* Section titles */
 section h2 {
   font-size: 2rem;
   color: #6C63FF;
   margin-bottom: 20px;
 }
 
+/* Paragraph styles within sections */
 section p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
+/* Project-specific styles */
 .project {
   margin-bottom: 40px;
 }
 
+/* Project titles */
 .project h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
+/* Project links */
 .project a {
   color: #6C63FF;
   text-decoration: none;
@@ -80,20 +94,24 @@ section p {
   transition: color 0.3s ease;
 }
 
+/* Project links hover effect */
 .project a:hover {
   color: #FF6F61;
 }
 
+/* Contact section link styles */
 section#contact a {
   color: #6C63FF;
   text-decoration: none;
   font-weight: 600;
 }
 
+/* Contact section link hover effect */
 section#contact a:hover {
   color: #FF6F61;
 }
 
+/* Footer styles */
 footer {
   background-color: #333;
   color: white;
@@ -104,6 +122,7 @@ footer {
   width: 100%;
 }
 
+/* About Me section styles */
 #about {
   background-color: #f0f8ff;
   padding: 40px;
@@ -112,6 +131,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* About Me section title */
 #about h2 {
   font-size: 2.5rem;
   color: #6C63FF;
@@ -119,6 +139,7 @@ footer {
   text-align: center;
 }
 
+/* About Me section paragraph styles */
 about p {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -126,10 +147,46 @@ about p {
   margin-bottom: 20px;
 }
 
+/* Highlighted text in the About Me section */
 #about strong {
   color: #FF6F61;
 }
 
+/* Italic text in the About Me section */
 #about em {
   color: #6C63FF;
+}
+
+/* Styles for project-specific sections: Chromablend and Custom PC Build */
+#chromablend, #custom-pc-build {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project section titles */
+#chromablend h2, #custom-pc-build h2 {
+  color: #6C63FF;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Project section paragraphs */
+#chromablend p, #custom-pc-build p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Project images */
+#chromablend img, #custom-pc-build img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
