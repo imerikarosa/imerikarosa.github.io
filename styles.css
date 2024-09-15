@@ -5,6 +5,12 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Header styles */
@@ -18,20 +24,22 @@ header {
 
 /* Header title */
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0;
+  padding-bottom: 10px;
 }
 
-/* Navigation menu (unstyled list) */
+/* Navigation menu */
 header ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 /* Navigation menu items */
 header ul li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 /* Navigation links */
@@ -39,12 +47,16 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Navigation links hover effect */
 nav ul li a:hover {
   color: #FF6F61;
+  background-color: rgba(255, 111, 97, 0.2);
+  border-radius: 5px;
 }
 
 /* Highlight the active page in the navigation menu */
@@ -53,10 +65,10 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* Section general styles (applies to all sections) */
+/* Section general styles */
 section {
   background-color: white;
-  margin: 20px 0;
+  margin: 40px 0;
   padding: 60px 20px;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -65,20 +77,22 @@ section {
 
 /* Hover effect on sections */
 section:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 /* Section titles */
 section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #6C63FF;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Paragraph styles within sections */
 section p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 /* Project-specific styles */
@@ -88,7 +102,7 @@ section p {
 
 /* Project titles */
 .project h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 10px;
 }
 
@@ -123,15 +137,14 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  margin-top: 40px;
+  font-size: 1rem;
 }
 
 /* About Me section styles */
 #about {
   background-color: #f0f8ff;
-  padding: 40px;
+  padding: 50px;
   margin-bottom: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,7 +152,7 @@ footer {
 
 /* About Me section title */
 #about h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #6C63FF;
   margin-bottom: 20px;
   text-align: center;
@@ -147,7 +160,7 @@ footer {
 
 /* About Me section paragraph styles */
 about p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #333;
   margin-bottom: 20px;
@@ -163,7 +176,7 @@ about p {
   color: #6C63FF;
 }
 
-/* Styles for project-specific sections: Chromablend and Custom PC Build */
+/* Project section styles for individual project pages */
 #chromablend, #custom-pc-build {
   padding: 80px 20px;
   background-color: #e9f5ff;
@@ -196,8 +209,8 @@ about p {
   height: auto;
 }
 
-/* Button style for navigation back */
-.back-button {
+/* Buttons */
+button, .back-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -205,10 +218,13 @@ about p {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  border: none;
+  font-size: 1.1rem;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 /* Button hover effect */
-.back-button:hover {
+button:hover, .back-button:hover {
   background-color: #FF6F61;
 }
