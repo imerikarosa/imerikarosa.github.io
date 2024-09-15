@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erika's Portfolio</title>
+
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Link to Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+  
 <body>
+  <!-- Header section with navigation -->
   <header>
     <h1>Welcome to my Portfolio!</h1>
     <nav>
@@ -19,6 +25,7 @@
     </nav>
   </header>
 
+  <!-- About Me section -->
   <section id="about">
     <h2>About Me</h2>
     <p>
@@ -32,19 +39,62 @@
     </p> 
   </section>
 
+  <!-- Projects section with links to detailed descriptions -->
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="#">Project 1</a></li>
-      <li><a href="#">Project 2</a></li>
-    </ul>
+
+    <!-- Chromablend project teaser -->
+    <div class="project">
+      <h3><a href="#chromablend">Chromablend</a></h3>
+      <p>
+        An advanced color mixing machine that allows users to create custom colors at home using the CMYK color mode. It also features a color sensing device that captures real-world hues.
+      </p>
+      <p><a href="#chromablend">Learn More</a></p>
+    </div>
+
+    <!-- Custom PC Build project teaser -->
+    <div class="project">
+      <h3><a href="#custom-pc-build">Custom PC Build</a></h3>
+      <p>
+        My first experience building a custom PC from the ground up. I thoughtfully selected each component to create a well-balanced and efficient system that meets my needs.
+      </p>
+      <p><a href="#custom-pc-build">Learn More</a></p>
+    </div>
   </section>
 
+  <!-- Chromablend detailed section -->
+  <section id="chromablend">
+    <h2>Chromablend - Advanced Color Mixing Machine</h2>
+    <!-- Note to self: remember to add a picture here -->
+    <!-- <img src="" alt="Chromablend Project" style="width:100%;max-width:600px;"> -->
+    <p>
+      Chromablend is an advanced color mixing machine that allows users to create custom colors at home using the <strong>CMYK color mode</strong>. With a user-friendly interface connected to mobile devices, Chromablend accurately mixes colors in real-time based on input codes.
+    </p>
+    <p>
+      The system also features a color sensing device that captures <strong>real-world hues</strong>, offering a seamless and creative way to explore and replicate a wide range of colors.
+    </p>
+  </section>
+
+  <!-- Custom PC Build detailed section -->
+  <section id="custom-pc-build">
+    <h2>Custom PC Build - My First Build</h2>
+    <!-- Note to self: remember to add a picture here -->
+    <!-- <img src="" alt="Custom PC Build" style="width:100%;max-width:600px;"> -->
+    <p>
+      This project was my first experience building a custom PC from the ground up. I thoughtfully selected each component to create a well-balanced and efficient system that meets my needs. This build was a hands-on opportunity to deepen my understanding of <strong>hardware</strong> and the <strong>assembly process</strong>.
+    </p>
+    <p>
+      The build features components like an <strong>AMD Ryzen 5 5600X</strong> and an <strong>MSI GeForce RTX 3060</strong>, with a focus on both performance and aesthetics.
+    </p>
+  </section>
+
+  <!-- Contact section -->
   <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: imerikarosa@proton.me</p>
   </section>
 
+  <!-- Footer section -->
   <footer>
     <p>&copy; 2024 Erika Pita</p>
   </footer>
