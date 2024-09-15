@@ -127,5 +127,42 @@
   <footer>
     <p>&copy; 2024 Erika Pita</p>
   </footer>
+
+  <!-- Javascript code for the animated progress bars-->
+  <script>
+    // Function to animate the progress bar and percentage
+    const progressBars = document.querySelectorAll('.progress');
+    const counters = document.querySelectorAll('.percentage');
+    const speed = 200; // Speed for number animation
+
+    // Function to animate the number count
+    const animateNumbers = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      const inc = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(() => animateNumbers(counter), 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    // Function to handle progress bars and numbers when scrolling
+    const handleScrollAnimation = () => {
+      progressBars.forEach((bar, index) => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          bar.style.width = bar.getAttribute('data-progress') + '%';
+          animateNumbers(counters[index]);
+        }
+      });
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScrollAnimation);
+  </script>
 </body>
 </html>
