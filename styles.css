@@ -55,8 +55,6 @@ nav ul li a {
 /* Navigation links hover effect */
 nav ul li a:hover {
   color: #FF6F61;
-  background-color: rgba(255, 111, 97, 0.2);
-  border-radius: 5px;
 }
 
 /* Highlight the active page in the navigation menu */
