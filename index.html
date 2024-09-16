@@ -154,20 +154,13 @@
     const navMenu = document.getElementById('nav-menu');
 
     menuButton.addEventListener('click', () => {
-      if (navMenu.classList.contains('hidden')) {
-        navMenu.classList.remove('hidden');
-        menuButton.innerText = 'Close';
-        menuButton.classList.add('active');
-      } else {
-        navMenu.classList.add('hidden');
-        menuButton.innerText = 'Menu';
-        menuButton.classList.remove('active');
-      }
+      menuButton.classList.toggle('active');
+      navMenu.classList.toggle('hidden');
     });
 
     // Letter spacing effect
     menuButton.addEventListener('mouseover', () => {
-      menuButton.style.letterSpacing = '0.3em';
+      menuButton.style.letterSpacing = '0.2em';
     });
     menuButton.addEventListener('mouseout', () => {
       menuButton.style.letterSpacing = 'normal';
