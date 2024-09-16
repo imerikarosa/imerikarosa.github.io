@@ -154,14 +154,22 @@
     const navMenu = document.getElementById('nav-menu');
 
     menuButton.addEventListener('click', () => {
-      menuButton.classList.toggle('active');
       navMenu.classList.toggle('hidden');
+      
+      if (menuButton.textContent === 'Menu') {
+        menuButton.textContent = 'Close';
+      } else {
+        menuButton.textContent = 'Menu';
+      }
+
+      menuButton.classList.toggle('active');
     });
 
     // Letter spacing effect
     menuButton.addEventListener('mouseover', () => {
       menuButton.style.letterSpacing = '0.2em';
     });
+
     menuButton.addEventListener('mouseout', () => {
       menuButton.style.letterSpacing = 'normal';
     });
@@ -170,12 +178,11 @@
     const progressBars = document.querySelectorAll('.progress');
     const counters = document.querySelectorAll('.percentage');
     const speed = 200; // Speed for number animation
-
+    
     // Function to animate the number count
     const animateNumbers = (counter) => {
       const target = +counter.getAttribute('data-target');
       const count = +counter.innerText;
-
       const inc = target / speed;
 
       if (count < target) {
@@ -196,7 +203,7 @@
         }
       });
     };
-
+    
     // Add scroll event listener
     window.addEventListener('scroll', handleScrollAnimation);
   </script>
