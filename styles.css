@@ -327,6 +327,13 @@ button:hover, .back-button:hover {
   opacity: 1;
 }
 
+#nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 /* Keyframe animation for menu items */
 @keyframes slideDown {
   0% {
