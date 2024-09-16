@@ -364,6 +364,12 @@ button:hover, .back-button:hover {
   text-decoration: none;
   flex-basis: 150px;
   flex-shrink: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#nav-menu ul li a:hover {
+  color: #FF6F61;
+  transform: scale(1.1);
 }
 
 .description {
@@ -372,6 +378,11 @@ button:hover, .back-button:hover {
   margin-left: 20px;
   white-space: nowrap;
   flex-grow: 1;
+  transition: color 0.3s ease;
+}
+
+#nav-menu ul li:hover .description {
+  color: #FF6F61;
 }
 
 #nav-menu:not(.hidden) ul li {
