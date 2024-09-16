@@ -305,7 +305,6 @@ button:hover, .back-button:hover {
   /* display: flex; 
   justify-content: center; 
   align-items: center; */
-  text-align: center;
   transition: letter-spacing 0.3s ease, transform 0.6s ease-in-out;
 }
 
