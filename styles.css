@@ -341,8 +341,8 @@ button:hover, .back-button:hover {
   padding-left: 20px;
   justify-content: flex-start;
   opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 #nav-menu ul li:nth-child(1) {
