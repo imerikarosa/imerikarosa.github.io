@@ -135,8 +135,22 @@
     <p>&copy; 2024 Erika Pita</p>
   </footer>
 
-  <!-- Javascript code for the animated progress bars-->
+  <!-- Javascript code for animations-->
   <script>
+    // Menu animations
+    const menuButton = document.getElementById('menu-button');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuButton.addEventListener('click', () => {
+      if (navMenu.classList.contains('hidden')) {
+        navMenu.classList.remove('hidden');
+        menuButton.innerText = 'Close';
+      } else {
+        navMenu.classList.add('hidden');
+        menuButton.innerText = 'Menu';
+      }
+    });
+    
     // Function to animate the progress bar and percentage
     const progressBars = document.querySelectorAll('.progress');
     const counters = document.querySelectorAll('.percentage');
