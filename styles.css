@@ -327,13 +327,6 @@ button:hover, .back-button:hover {
   opacity: 1;
 }
 
-#nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
 /* Keyframe animation for menu items */
 @keyframes slideDown {
   0% {
@@ -354,6 +347,16 @@ button:hover, .back-button:hover {
 
 #nav-menu:not(.hidden) ul li {
   animation:slideDown 1.2s forwards;
+}
+
+#nav-menu ul li {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: flex-start;
+  opacity: 0;
+  animation: slideDown 1.2s forwards;
 }
 
 #nav-menu ul li:nth-child(1) {
