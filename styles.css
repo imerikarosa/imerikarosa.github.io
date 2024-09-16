@@ -311,7 +311,7 @@ button:hover, .back-button:hover {
 
 .menu-toggle span {
   display: inline-block;
-  transition: letter-spacing 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transition: /*letter-spacing 0.6s ease-in-out,*/ transform 0.6s ease-in-out;
   transform-origin: center;
 }
 
