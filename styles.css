@@ -342,16 +342,11 @@ button:hover, .back-button:hover {
 #nav-menu.hidden ul li {
   opacity: 0;
   transform: translateY(-30px);
+  animation: none;
 }
 
-#nav-menu ul li {
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  justify-content: flex-start;
-  opacity: 0;
-  animation: slideDown 1.2s forwards;
+#nav-menu:not(.hidden) ul li {
+  animation:slideDown 1.2s forwards;
 }
 
 #nav-menu ul li:nth-child(1) {
