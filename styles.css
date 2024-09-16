@@ -289,6 +289,19 @@ button:hover, .back-button:hover {
   display: none;
 }
 
+/* General styles for the menu toggle */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  background-color: #f5a5a5;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
 /* Menu styles */
 #nav-menu {
   position: fixed;
@@ -302,6 +315,13 @@ button:hover, .back-button:hover {
   align-items: center;
   flex-direction: column;
   z-index: 999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#nav-menu.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 #nav-menu ul {
@@ -317,9 +337,4 @@ button:hover, .back-button:hover {
   color: white;
   font-size: 2rem;
   text-decoration: none;
-}
-
-/* Transition for smooth opening */
-.menu-toggle, #nav-menu {
-  transition: all 0.3s ease;
 }
