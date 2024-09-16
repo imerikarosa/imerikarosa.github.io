@@ -342,7 +342,7 @@ button:hover, .back-button:hover {
   justify-content: flex-start;
   opacity: 0;
   transform: translateX(-20px);
-  transition: opacity 2s ease, transform 2s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 #nav-menu ul li:nth-child(1) {
