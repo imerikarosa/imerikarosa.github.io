@@ -334,6 +334,18 @@ button:hover, .back-button:hover {
   width: 100%;
 }
 
+/* Keyframe animation for menu items */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #nav-menu ul li {
   margin: 20px 0;
   display: flex;
@@ -342,7 +354,7 @@ button:hover, .back-button:hover {
   justify-content: flex-start;
   opacity: 0;
   transform: translateY(-40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: slideDown 0.5s forwards;
 }
 
 #nav-menu ul li:nth-child(1) {
@@ -383,9 +395,4 @@ button:hover, .back-button:hover {
 
 #nav-menu ul li a:hover ~ .description {
   color: #FF6F61;
-}
-
-#nav-menu:not(.hidden) ul li {
-  opacity: 1;
-  transform: translateY(0);
 }
