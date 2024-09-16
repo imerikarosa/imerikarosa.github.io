@@ -353,8 +353,7 @@ button:hover, .back-button:hover {
   padding-left: 20px;
   justify-content: flex-start;
   opacity: 0;
-  transform: translateY(-40px);
-  transition: slideDown 0.5s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 #nav-menu ul li:nth-child(1) {
