@@ -157,10 +157,20 @@
       if (navMenu.classList.contains('hidden')) {
         navMenu.classList.remove('hidden');
         menuButton.innerText = 'Close';
+        menuButton.classList.add('active');
       } else {
         navMenu.classList.add('hidden');
         menuButton.innerText = 'Menu';
+        menuButton.classList.remove('active');
       }
+    });
+
+    // Pulsation effect
+    menuButton.addEventListener('mouseover', () => {
+      menuButton.style.transform = 'scale(0.9);
+    });
+    menuButton.addEventListener('mouseout', () => {
+      menuButton.style.transform = 'scale(1);
     });
     
     // Function to animate the progress bar and percentage
