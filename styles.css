@@ -302,15 +302,12 @@ button:hover, .back-button:hover {
   font-size: 1.5rem;
   color: #333;
   perspective: 500px;
-  /* display: flex; 
-  justify-content: center; 
-  align-items: center; */
   transition: letter-spacing 0.3s ease, transform 0.6s ease-in-out;
 }
 
 .menu-toggle span {
   display: inline-block;
-  transition: /*letter-spacing 0.6s ease-in-out,*/ transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   transform-origin: center;
 }
 
@@ -326,12 +323,16 @@ button:hover, .back-button:hover {
 .menu-toggle.active::after {
   content: "Close";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateX(-90deg);
-  opacity: 1;
-  transform: translate(-50%, -50%) rotateX(0deg); 
+  top: 0;
+  left: 0;
+  transform: rotateX(-90deg);
+  opacity: 0;
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.menu-toggle.active::after {
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .hidden {
