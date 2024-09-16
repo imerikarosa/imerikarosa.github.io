@@ -381,7 +381,7 @@ button:hover, .back-button:hover {
   transition: color 0.3s ease;
 }
 
-#nav-menu ul li:hover .description {
+#nav-menu ul li:hover + .description {
   color: #FF6F61;
 }
 
