@@ -341,7 +341,7 @@ button:hover, .back-button:hover {
   padding-left: 20px;
   justify-content: flex-start;
   opacity: 0;
-  transform: translateX(-20px);
+  transform: translateY(-20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -387,5 +387,5 @@ button:hover, .back-button:hover {
 
 #nav-menu:not(.hidden) ul li {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
