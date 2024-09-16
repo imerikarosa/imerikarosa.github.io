@@ -268,5 +268,5 @@ button:hover, .back-button:hover {
   position: absolute;
   right: -40px; /* Moves percentage outside the bar to the right */
   font-size: 1rem;
-  color: white;
+  color: #6C63FF;
 }
